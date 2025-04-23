@@ -21,9 +21,6 @@ function postOpskrift(posts) {
     posts.forEach(post => {
       const postEl = document.createElement("section");
 
-      console.log(post.slug)
-  
-  
       postEl.innerHTML = `
         <h2>${post.acf.navn_pa_ret}</h2>
         

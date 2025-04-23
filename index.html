@@ -4,23 +4,232 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BeerShop.com</title>
+    <title>FamilyFeast</title>
+    <script src="./assets/js/recipe.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./assets/js/app.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    
   </head>
   <body>
     <header>
-      <h1>Mad i mund</h1>
-      <img src="./assets/images/quinoa-burrito-bowl.webp" alt="">
+      <nav>
+        <h1>FamilyFeast</h1>
+        <ul>
+          <li><a href="./index.html">Hjem</a></li>
+          <li><a href="./allRecipies.html">Opskrifter</a></li>
+        </ul>
+
+        <ul>
+          <li><i class="fas fa-search"></i></li>
+          <li><i class="fas fa-user"></i></li>
+        </ul>
+      </nav>
     </header>
 
-    <article>
-      <h2></h2>
-      <img src="" alt="">
-      <p></p>
-      <p></p>
-      <a href="/recipe.html"></a>
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Lækre måltider til hele familien</h1>
+        <p>Find en nem og hurtig ret hele familien vil elske!</p>
+      </div>
+    </div>
 
-    </article>
+    <div class="themePicker">
+      <h2>Hvad vil du have at spise?</h2>
+      <ul>
+        <li>
+          <a href="/temaer/hovedret">
+            <img
+              src="./assets/images/sweet-potato-burritos_large.webp"
+              alt="Hovedret"
+            />
+            <span>Hovedret</span>
+          </a>
+        </li>
+        <li>
+          <a href="/temaer/vegetariske-retter">
+            <img
+              src="./assets/images/vegetable-pie_large.png"
+              alt="Vegetariske Retter"
+            />
+            <span>Vegetariske Retter</span>
+          </a>
+        </li>
+        <li>
+          <a href="/temaer/dessert">
+            <img
+              src="./assets/images/strawberry-pie_large.webp"
+              alt="Dessert"
+            />
+            <span>Dessert</span>
+          </a>
+        </li>
+        <li>
+          <a href="/temaer/madpakke">
+            <img
+              src="./assets/images/sweet-dinner-rolls_large.webp"
+              alt="Til Madpakken"
+            />
+            <span>Til Madpakken</span>
+          </a>
+        </li>
+        <li>
+          <a href="/temaer/paaske">
+            <img
+              src="./assets/images/rosemary-cannellini-beans_large.webp"
+              alt="Påske"
+            />
+            <span>Påske</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="favourites page-spacer">
+      <h2>Hverdagsens favoritter</h2>
+      <p>Lav mad sammen med hele familien</p>
+
+      <div class="favourites-list">
+        <article>
+          <img
+            src="./assets/images/spaghetti-and-meatballs.png"
+            alt="Spaghetti med kødboller"
+          />
+          <h3>Spaghetti med kødboller</h3>
+        </article>
+
+        <article>
+          <img
+            src="./assets/images/better-lasagna_large.webp"
+            alt="Lækker Lasagne"
+          />
+          <h3>Lækker Lasagne</h3>
+        </article>
+
+        <article>
+          <img
+            src="./assets/images/vegetable-pie_large.png"
+            alt="Grøntsagstærte"
+          />
+          <h3>Grøntsagstærte</h3>
+        </article>
+      </div>
+    </div>
+
+    <div class="seasonDiv">
+      <h2>Smag af sæson</h2>
+      <p>En sæsonaktuel opskriftsamling</p>
+    </div>
+
+    <div class="recipe-list page-spacer">
+      <div class="recipe-item">
+        <img
+          src="./assets/images/carrot-ginger-soup_large.png"
+          alt="Gulerod-ingefær suppe"
+        />
+        <div class="recipe-info">
+          <h3>Gulerod-ingefær suppe</h3>
+          <div class="cook-time">40 min</div>
+
+          <div class="tags">
+            <span class="vegan tag">Vegetariske retter</span>
+            <span class="comfort tag">Comfort food</span>
+          </div>
+
+          <p class="description">
+            En varmende og nem suppe med gulerødder, frisk ingefær og
+            appelsinsaft. Perfekt til kølige forårsdage.
+          </p>
+
+          <button>Se opskriften her</button>
+        </div>
+      </div>
+
+      <div class="recipe-item reverse">
+        <img src="./assets/images/quinoa-burrito-bowl_large.png" alt="Sund salat" />
+        <div class="recipe-info">
+          <h3>Sund salat med quinoa</h3>
+          <div class="cook-time">25 min</div>
+      
+          <div class="tags">
+            <span class="tag green">Vegetariske retter</span>
+            <span class="tag">Frisk og let</span>
+          </div>
+      
+          <p class="description">
+            En sprød salat med quinoa, avocado og granatæble. Perfekt til frokost
+            eller som tilbehør.
+          </p>
+      
+          <button>Se opskriften her</button>
+        </div>
+      </div>
+      
+      
+
+      <div class="recipe-item">
+        <img src="./assets/images/roasted-red-pepper-tomato-sauce_large.png" alt="Pasta ret" />
+        <div class="recipe-info">
+          <h3>Kremet tomatpasta</h3>
+          <div class="cook-time">45 min</div>
+      
+          <div class="tags">
+            <span class="tag">Dessert</span>
+            <span class="tag">Comfort food</span>
+          </div>
+      
+          <p class="description">
+            En nem og luftig kage med mild citronsmag. God til eftermiddagste,
+            fødselsdage eller hyggestunder i solen.
+          </p>
+      
+          <button>Se opskriften her</button>
+        </div>
+      </div>
+    </div>
+
+
+      <div class="favourites page-spacer">
+      <h2>Hverdagsens favoritter</h2>
+      <p>Lav mad sammen med hele familien</p>
+
+      <div class="favourites-list">
+        <article>
+          <img
+            src="./assets/images/spaghetti-and-meatballs.png"
+            alt="Spaghetti med kødboller"
+          />
+          <h3>Spaghetti med kødboller</h3>
+        </article>
+
+        <article>
+          <img
+            src="./assets/images/better-lasagna_large.webp"
+            alt="Lækker Lasagne"
+          />
+          <h3>Lækker Lasagne</h3>
+        </article>
+
+        <article>
+          <img
+            src="./assets/images/vegetable-pie_large.png"
+            alt="Grøntsagstærte"
+          />
+          <h3>Grøntsagstærte</h3>
+        </article>
+      </div>
+    </div>
+      
+
+    <footer>
+      <p>
+        MakeBetterFood.com recipes are available under a Creative Commons
+        License. 
+      </p>
+      <p>🧑‍🍳 Cooked with love by Kevin Conroy.</p>
+    </footer>
+ 
   </body>
 </html>
